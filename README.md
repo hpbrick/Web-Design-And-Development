@@ -1,4 +1,4 @@
-# tutorial-2
-Lab 2 for CIS 3610
+# Web Design and Activities
+Files for lab activities in the Web design and Development course CIS 3610
 
 Test
