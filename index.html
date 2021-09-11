@@ -10,33 +10,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Bootstrap CSS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-        <!-- Cutom CSS/Bootstrap overrides-->
-        <style>
-            /*
-                Full page image: https://www.w3schools.com/howto/howto_css_full_page.asp
-                Text on Images: https://css-tricks.com/design-considerations-text-images/
-                Text shadow property: https://www.w3schools.com/cssref/css3_pr_text-shadow.asp
-                CSS min-height Property: https://www.w3schools.com/cssref/pr_dim_min-height.asp 
-            */
-            header {
-                background: #FFFFFF url('img/panoramic-laguna-brava-2.jpg') no-repeat center;
-                background-size: cover;		
-                height: 100vh;	
-                min-height: 300px;
-            }
-            header div {
-                position: absolute;
-                top: 70%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
-                text-align: center;
-                text-shadow: 2px 2px 4px #000000;
-            }
-        </style>
         
 </head>
 
@@ -105,7 +81,7 @@
         </div>
     </main>
     <hr>
-    <aside>
+    <aside class="container">
         <!-- A form asking for page viewer's experiences -->
         <h2 class="display-5 text-center">Have you travelled to Laguna Brava?</h2>
         <p>We want to know about your experiences.</p>
