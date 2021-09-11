@@ -11,7 +11,33 @@
 
         <!-- Bootstrap CSS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <!-- Cutom CSS/Bootstrap overrides-->
+        <style>
+            /*
+                Full page image: https://www.w3schools.com/howto/howto_css_full_page.asp
+                Text on Images: https://css-tricks.com/design-considerations-text-images/
+                Text shadow property: https://www.w3schools.com/cssref/css3_pr_text-shadow.asp
+                CSS min-height Property: https://www.w3schools.com/cssref/pr_dim_min-height.asp 
+            */
+            header {
+                background: #FFFFFF url('img/panoramic-laguna-brava-2.jpg') no-repeat center;
+                background-size: cover;		
+                height: 100vh;	
+                min-height: 300px;
+            }
+            header div {
+                position: absolute;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                text-align: center;
+                text-shadow: 2px 2px 4px #000000;
+            }
+        </style>
+        
 </head>
 
 <body>
@@ -52,7 +78,8 @@
                     <!-- Self-contained content intended to be independently distributable -->
                     <h3 class="display-6 text-center">The Lake Challenge</h3>
                     <img src="img/kayak.jpg" class="img-fluid rounded-pill" alt="Lake challenge kayak image">
-                    <p>Cross the four kilometres in a kayak guided by a local guide. <strong class="text-warning fw-bold">This guided visit is physically
+                    <p>Cross the four kilometres in a kayak guided by a local guide. <strong class="text-warning fw-bold"><i class="bi bi-exclamation-triangle"></i>
+                        This guided visit is physically
                         demanding, and we recommend it for only those in excellent physical condition.</strong>
                     </p>
                     <ul class="list-unstyled">
@@ -60,6 +87,7 @@
                         <li><span class="fw-bold">Price: </span>$50 USD</li>
                         <li><span class="fw-bold">Minimum: </span>2 pax</li>
                     </ul>
+                    <a class="btn btn-primary btn-sm" href="javascript:void(0)">Book here</a> 
                 </article>
             <article class="col-lg px-5 mb-4">
             <h3 class="display-6 text-center">Sit Back & Relax</h3>
@@ -72,6 +100,7 @@
                 <li><span class="fw-bold">Price: </span>$40 USD</li>
                 <li><span class="fw-bold">Minimum:</span>4 pax</li>
             </ul>
+            <a class="btn btn-primary btn-sm" href="javascript:void(0)">Book here</a> 
             </article>
         </div>
     </main>
