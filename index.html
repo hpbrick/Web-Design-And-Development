@@ -6,18 +6,50 @@
     <meta name="description" content=" Laguna Brava Ecotourism is a local adventure company based in Laguna Brava." />
 
     <title>Laguna Brava Ecotourism</title>
+        <!-- Responsive metatag -->    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <!-- Cutom CSS/Bootstrap overrides-->
+        <style>
+            /*
+                Full page image: https://www.w3schools.com/howto/howto_css_full_page.asp
+                Text on Images: https://css-tricks.com/design-considerations-text-images/
+                Text shadow property: https://www.w3schools.com/cssref/css3_pr_text-shadow.asp
+                CSS min-height Property: https://www.w3schools.com/cssref/pr_dim_min-height.asp 
+            */
+            header {
+                background: #FFFFFF url('img/panoramic-laguna-brava-2.jpg') no-repeat center;
+                background-size: cover;		
+                height: 100vh;	
+                min-height: 300px;
+            }
+            header div {
+                position: absolute;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                text-align: center;
+                text-shadow: 2px 2px 4px #000000;
+            }
+        </style>
+        
 </head>
 
 <body>
     <header>
         <!-- Introductory content -->
-        <img src="img/panoramic-laguna-brava-2.jpg" width="1500" height="500" alt="Laguna Brava lake image">
-        <h1>Welcome to Laguna Brava Ecotourism</h1>
+        <img src="img/panoramic-laguna-brava-2.jpg" class="img-fluid" alt="Laguna Brava lake image">
+        <h1 class="display-2 text-center">Welcome to Laguna Brava Ecotourism</h1>
     </header>
 
-    <main>
+    <main class="container">
         <!-- Dominant content of the web page -->
-        <p>
+        <p class="lead">
             Laguna Brava Ecotourism is an organization run by <em>local community members</em> based in Laguna Brava.
             Laguna Brava is a <a href="https://en.wikipedia.org/wiki/Karst" target="_blank">karstic lake</a> of incomparable beauty
             located in western Guatemala. Laguna Brava is located in a remote and highly underdeveloped region, so
@@ -26,52 +58,57 @@
             known as Yolnabaj by the region's inhabitants, which translates as "rough lake". Despite its name, the
             waters of Laguna Brava Laguna are so calm that they instantly awaken a deep feeling of peace.
         </p>
-
-        <h2>Who are we?</h2>
+        <div class="my-4">
+        <h2 class="display-5 text-center">Who are we?</h2>
         <p>
             We provide guided visits to Laguna Brava and welcome travellers from all regions of the world looking for
             adventure and nature. We believe that visitors and responsible tourism practices are essential to support
             the development of our local community.
         </p>
 
-        <h2>What do we offer?</h2>
+        <h2 class="display-5 text-center">What do we offer?</h2>
         <p>
             We offer two options for guided visits that allow you to enjoy Laguna Brava natural beauty. In both options,
-            <strong>we provide life vests and local guides who know the lake very well to take care of your
+            <strong class="text-decoration-underline fw-normal">we provide life vests and local guides who know the lake very well to take care of your
                 safety.</strong>
         </p>
-        <article>
-            <!-- Self-contained content intended to be independently distributable -->
-            <h3>The Lake Challenge</h3>
-            <img src="img/kayak.jpg" width="450" height="350" alt="Lake challenge kayak image">
-            <p>Cross the four kilometres in a kayak guided by a local guide. <strong>This guided visit is physically
-                demanding, and we recommend it for only those in excellent physical condition.</strong>
-            </p>
-            </article>
-        <ul>
-            <li><b>Duration: </b>5 hours approx.</li>
-            <li><b>Price: </b>$50 USD</li>
-            <li><b>Minimum: </b>2 pax</li>
-        </ul>
-        </article>
-        <article>
-            <h3>Sit Back & Relax</h3>
-            <img src="img/boat.jpg" width="450" height="350" alt="Sit Back & Relax boat image">
+        </div>  
+        <div class="row">
+                <article class="col-lg px-5 mb-4">
+                    <!-- Self-contained content intended to be independently distributable -->
+                    <h3 class="display-6 text-center">The Lake Challenge</h3>
+                    <img src="img/kayak.jpg" class="img-fluid rounded-pill" alt="Lake challenge kayak image">
+                    <p>Cross the four kilometres in a kayak guided by a local guide. <strong class="text-warning fw-bold"><i class="bi bi-exclamation-triangle"></i>
+                        This guided visit is physically
+                        demanding, and we recommend it for only those in excellent physical condition.</strong>
+                    </p>
+                    <ul class="list-unstyled">
+                        <li><span class="fw-bold">Duration: </span>5 hours approx.</li>
+                        <li><span class="fw-bold">Price: </span>$50 USD</li>
+                        <li><span class="fw-bold">Minimum: </span>2 pax</li>
+                    </ul>
+                    <a class="btn btn-primary btn-sm" href="javascript:void(0)">Book here</a> 
+                </article>
+            <article class="col-lg px-5 mb-4">
+            <h3 class="display-6 text-center">Sit Back & Relax</h3>
+            <img src="img/boat.jpg" class="img-fluid rounded-pill" alt="Sit Back & Relax boat image">
             <p>Board a rowing boat that takes to around the most beautiful parts of the lake. This guided visit does not
                 require physical effort.
             </p>
             <ul>
-                <li><b>Duration: </b> hours approx.</li>
-                <li><b>Price: </b>$40 USD</li>
-                <li><b>Minimum:</b>4 pax</li>
+                <li><span class="fw-bold">Duration: </span> hours approx.</li>
+                <li><span class="fw-bold">Price: </span>$40 USD</li>
+                <li><span class="fw-bold">Minimum:</span>4 pax</li>
             </ul>
-        </article>
+            <a class="btn btn-primary btn-sm" href="javascript:void(0)">Book here</a> 
+            </article>
+        </div>
     </main>
     <hr>
     <aside>
         <!-- A form asking for page viewer's experiences -->
-        <h2>Have you travelled to Laguna Brava?</h2>
-        <p>We want to know about your experiences.</h2>
+        <h2 class="display-5 text-center">Have you travelled to Laguna Brava?</h2>
+        <p>We want to know about your experiences.</p>
         <form>
             <label for="name">Name: </label>
             <input type="text" name="name" id="name" placeholder="Write your name"><br><br>
@@ -84,5 +121,7 @@
         </form>
         </p>
     </aside>
+    <!-- Bootstrap Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
